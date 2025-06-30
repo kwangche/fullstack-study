@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f8f8f8;
+}
+
+p {
+  margin: 0;
+}
+
+a:visited,
+a:link,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+hr {
+  border: 1px dashed #b6bfd3;
+  height: 1px;
+  background-color: #dfe3f2;
+  margin: 20px 0;
+}
+
+header {
+  background-color: #11172b;
+  padding: 12px 0;
+}
+
+header .logo {
+  width: 640px;
+  margin: 0 auto;
+  color: #fff;
+  font-family: Titillium Web, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+header .logo img {
+  height: 24px;
+}
+
+header .logo span {
+  font-weight: 600;
+}
+
+main {
+  padding-top: 40px;
+  width: 640px;
+  margin: 0 auto;
+}
+
+main section {
+  border-radius: 8px;
+}
+
+.route-info-section {
+  padding: 24px 32px;
+  background-color: #ebeff8;
+}
+
+.route-info-section span {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #b3bdd5;
+}
+
+.route-info-section span img {
+  height: 16px;
+  margin-right: 10px;
+}
+
+.route-info-section .route-title {
+  margin: 8px 0 24px;
+  font-family: Titillium Web, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #000;
+}
+
+.route-info-section .route-date {
+  display: inline-block;
+  padding: 8px 24px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.route-info-section .route-note {
+  font-size: 12px;
+  color: #b3bdd5;
+}
+
+.ticket-list-section article {
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.ticket-list-section article h3,
+.ticket-list-section article .ticket-details {
+  padding: 8px 24px;
+}
+
+.ticket-list-section article h3 {
+  font-family: Titillium Web, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #16bf97;
+  border-bottom: 2px solid #dbf1ec;
+}
+
+.ticket-list-section article .ticket-details {
+  padding: 26px 24px 24px;
+}
+
+.ticket-list-section article span,
+.ticket-list-section article strong {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.ticket-list-section article span {
+  font-size: 12px;
+  font-weight: 500;
+  color:  #b3bdd5;
+}
+
+.ticket-list-section article .ticket-time {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.ticket-list-section article .ticket-time img {
+  width: 18px;
+  margin: 0 10px;
+}
+
+.ticket-list-section article .ticket-time strong {
+  font-size: 16px;
+  font-weight: 700;
+  color:  #1a345e;
+}
+
+.ticket-list-section article .flight-numbers strong {
+  font-size: 16px;
+  color: #0b1f66;
+}
+
+.ticket-list-section article .ticket-actions {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a345e;
+  text-align: right;
+}
+
+.ticket-list-section article .ticket-actions :nth-child(2) {
+  margin: 0 24px;
+}
+
+.ticket-list-section article .ticket-actions .disabled {
+  color: #bce0e8;
+}
