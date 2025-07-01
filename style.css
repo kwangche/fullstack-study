@@ -1,0 +1,38 @@
+.nutrition-facts {
+  border: 2px solid #bcbcbc;
+  padding: 16px 16px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.calorie {
+  text-align: right;
+  font-weight: 700;
+  border-bottom: 11px solid #616161;
+  padding: 16px 0;
+  margin: 16px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.info-title{
+  font-weight: bold;
+  text-align: right;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  text-align: right;
+}
+
+td {
+  padding: 8px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.note {
+  color: #616161
+}
