@@ -1,16 +1,16 @@
 // showTitle 함수를 완성해 주세요
 function showTitle(e) {
-  if (e.target.dataset.title) {
+  if (e.target.getAttribute('data-title')) {
     const span = document.createElement('span');
     span.classList.add('title');
-    span.textContent = e.target.dataset.title;
+    span.textContent = e.target.getAttribute('data-title');
     e.target.append(span);
   }
 }
 
 // removeTitle 함수를 완성해 주세요
 function removeTitle(e) {
-  if (e.target.dataset.title && e.target.lastElementChild) {
+  if (e.target.getAttribute('data-title') && e.target.lastElementChild) {
     e.target.lastElementChild.remove();
   }
 }
