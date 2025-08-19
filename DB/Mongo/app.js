@@ -1,13 +1,16 @@
 import express from 'express';
 import mongoose from 'mongoose';
-import mockSubscriptions from './data/mock.js';
-import { DATABASE_URL } from './env.js';
+import * as dotenv from 'dotenv';
+import cors from 'cors';
 import Subscription from './models/Subscription.js';
 
-mongoose.connect(DATABASE_URL).then(() => console.log('Connected to DB'));
+dotenv.config();
+
+mongoose.connect(process.env.DATABASE_URL).then(() => console.log('Connected to DB'));
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 function asyncHandler(handler) {
   async function asyncReqHandler(req, res) {
@@ -23,7 +26,7 @@ function asyncHandler(handler) {
       }
     }
   }
-  
+
   return asyncReqHandler;
 }
 
@@ -76,4 +79,4 @@ app.delete('/subscriptions/:id', asyncHandler(async (req, res) => {
   }
 }));
 
-app.listen(3000, () => console.log('Server Started'));
+app.listen(process.env.PORT || 3000, () => console.log('Server Started'));
